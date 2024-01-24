@@ -45,7 +45,7 @@ declare module "meta-api" {
 
     listen: (callback: Callback<ListenData>) => Promise<void>;
 
-    markAsRead: (
+    markRead: (
       threadID: string,
       read?: boolean,
       callback?: Callback<null>,
