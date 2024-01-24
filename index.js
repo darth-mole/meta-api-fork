@@ -65,7 +65,7 @@ async function login({ cookies, email, password, configs, language }, callback) 
     }
     var { body, headers } = await request('https://www.facebook.com/');
     
-    if (headers.location.includes('/checkpoint/?next')) {
+    if (headers.location?.includes('/checkpoint/?next')) {
         var { body } = await request(headers.location);
         var $ = cheerio.load(body), arrayForm = [], formData = {};
         $('form input').map((key, value) => arrayForm.push({ name: $(value).attr('name'), value: $(value).val() }));
