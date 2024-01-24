@@ -78,7 +78,7 @@ declare module "meta-api" {
   export type MessageObject = {
     body?: string;
     sticker?: string;
-    attachment?: Stream.Readable | Stream.Readable[];
+    attachments?: Stream.Readable | Stream.Readable[];
     url?: string;
     emoji?: string;
     emojiSize?: "small" | "medium" | "large";
