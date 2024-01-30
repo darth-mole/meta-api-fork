@@ -26,18 +26,18 @@ declare module "meta-api" {
   };
 
   export type Config = {
-    autoUpdate: boolean;
-    selfListen: boolean;
-    selfListenEvents: boolean;
-    listenEvents: boolean;
-    listenTyping: boolean;
-    updatePresence: boolean;
-    readReceipt: boolean;
-    autoMarkRead: boolean;
-    onlineStatus: boolean;
-    emitReady: boolean;
-    autoReconnect: boolean;
-    userAgent: string;
+    autoUpdate?: boolean;
+    selfListen?: boolean;
+    selfListenEvents?: boolean;
+    listenEvents?: boolean;
+    listenTyping?: boolean;
+    updatePresence?: boolean;
+    readReceipt?: boolean;
+    autoMarkRead?: boolean;
+    onlineStatus?: boolean;
+    emitReady?: boolean;
+    autoReconnect?: boolean;
+    userAgent?: string;
   };
 
   export type Api = {
